@@ -22,12 +22,13 @@ python train.py --config_file configs/a.yml
 最终将3个模型对测试集的预测结果进行加权融合。  
 文件路径如下
 |-- data  
-|-- model
-|-- 
-	|--amap_traffic_final_b_test_data_1009.zip
-	|--amap_traffic_final_b_test_data
-		|--000001
-			|--1.jpg
-			|--2.jpg
+	|--train
 		...
-	|--amap_traffic_final_b_test_1009.json
+	|--test
+		|--query
+		|--gallery
+|-- model
+	|--a
+	|--b
+|-- NAIC_Person_ReID_DMT 
+	...
