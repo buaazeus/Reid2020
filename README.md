@@ -9,6 +9,9 @@ python divided_dataset.py --data_dir_query ../data/test/query_a --data_dir_galle
 训练阶段进行了2次训练  
 第一次训练  
 python train.py --config_file configs/a.yml  
+每10个epoch保存一次模型，训练50个epoch结束。  
+第二次训练  
+先将2020训练集中2万张无标记的图片  
 模型1.在imagenet预训练模型基础上，在2020+2019数据上训练40个epoch。  
 模型2.在imagenet预训练模型基础上，在2020+2019数据上训练50个epoch。  
 模型3.在imagenet预训练模型基础上，先对2020训练集2万张无标记图片中随机选取了2792张作为query，剩余图片作为gallery，然后进行无监督训练。然后在2020+2019数据及无监督训练的结果一同进行训练50个epoch。  
