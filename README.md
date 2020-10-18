@@ -8,7 +8,7 @@ pip install opencv-python
 pip install yacs  
 以下所有代码均在NAIC_Person_ReID_DMT路径下运行  
 每一轮训练开始时，先运行以下代码，将图片分为normal和green两类。  
-python divided_dataset.py --data_dir_query ../data/test/query_a --data_dir_gallery ../data/test/gallery_a --save_dir ../data/test/  
+python divided_dataset.py --data_dir_query ../data/test/query --data_dir_gallery ../data/test/gallery --save_dir ../data/test/  
 训练阶段进行了2次训练  
 第一次训练  
 python train.py --config_file configs/a.yml  
