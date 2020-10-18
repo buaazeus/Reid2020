@@ -20,15 +20,15 @@ python train.py --config_file configs/a.yml
 模型3.在imagenet预训练模型基础上，先对2020训练集2万张无标记图片中随机选取了2792张作为query，剩余图片作为gallery，然后进行无监督训练。然后在2020+2019数据及无监督训练的结果一同进行训练50个epoch。  
 测试时使用了Rerank
 最终将3个模型对测试集的预测结果进行加权融合。  
-文件路径如下
+文件路径如下  
 |-- data  
-	|--train
-		...
-	|--test
-		|--query
-		|--gallery
-|-- model
-	|--a
-	|--b
-|-- NAIC_Person_ReID_DMT 
-	...
+	|--train  
+		...  
+	|--test  
+		|--query  
+		|--gallery  
+|-- model  
+	|--a  
+	|--b  
+|-- NAIC_Person_ReID_DMT  
+	...  
