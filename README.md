@@ -3,8 +3,8 @@
 00015970.png  00032710.png  00047507.png  00049382.png  00053208.png  00056739.png  00061620.png  00078937.png  00083951.png  
 使用的基础代码为  
 https://github.com/heshuting555/NAIC_Person_ReID_DMT  
-每一轮训练开始时，先运行以下代码，将图片分为normal和两类
-python divided_dataset.py --data_dir_query ../data/test/query_a --data_dir_gallery ../data/test/gallery_a --save_dir ../data/test/
+每一轮训练开始时，先运行以下代码，将图片分为normal和green两类。  
+python divided_dataset.py --data_dir_query ../data/test/query_a --data_dir_gallery ../data/test/gallery_a --save_dir ../data/test/  
 Rerank的参数修改为  
 模型1.在imagenet预训练模型基础上，在2020+2019数据上训练40个epoch。  
 模型2.在imagenet预训练模型基础上，在2020+2019数据上训练50个epoch。  
