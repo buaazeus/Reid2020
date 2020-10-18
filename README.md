@@ -1,4 +1,9 @@
 # Reid2020
 首先添加2019年行人重识别数据，并将标记序号在2020标记基础上顺延。删除其中
-使用了https://github.com/heshuting555/NAIC_Person_ReID_DMT的基础代码
+使用的基础代码为
+https://github.com/heshuting555/NAIC_Person_ReID_DMT
 Rerank的参数修改为
+模型1.在imagenet预训练模型基础上，在2020+2019数据上训练40个epoch。
+模型2.在imagenet预训练模型基础上，在2020+2019数据上训练50个epoch。
+模型3.在imagenet预训练模型基础上，先对2020训练集2万张无标记图片进行无监督训练，在2020+2019数据及无监督训练的结果一同进行训练50个epoch。
+最终将3个模型对测试集的预测结果进行加权融合。
