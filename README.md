@@ -7,8 +7,8 @@ https://github.com/heshuting555/NAIC_Person_ReID_DMT
 pip install opencv-python  
 pip install yacs  
 模型文件  
-链接：https://pan.baidu.com/s/1IidhaBKVpic8n5-iqCi4rA  
-提取码：rlm5  
+链接: https://pan.baidu.com/s/1Kvrmrgsmm-dET-S3zbQrXA  
+提取码: dw6p  
 
 以下所有代码均在NAIC路径下运行  
 
