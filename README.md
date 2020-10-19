@@ -21,7 +21,7 @@ python divided_dataset.py --data_dir_query ../data/test/query --data_dir_gallery
 python train.py --config_file configs/a.yml  
 每10个epoch保存一次模型，训练50个epoch结束。  
   
-第二次训练  
+第二次训练，需在第一次训练完成后进行，需要用到第一次训练的模型结果  
 data/test下存放2020训练集集2万无标记数据,随机选取了2792张作为query，剩余图片作为gallery，路径分别为data/test/query和data/test/gallery，用于无监督训练，具体图片见unlabel/query.txt和unlabel/gallery.txt  
 运行以下代码，将图片分为normal和green两类。  
 python divided_dataset.py --data_dir_query ../data/test/query --data_dir_gallery ../data/test/gallery --save_dir ../data/test/  
@@ -34,14 +34,15 @@ data/test下存放2020测试集数据
 python divided_dataset.py --data_dir_query ../data/test/query --data_dir_gallery ../data/test/gallery --save_dir ../data/test/  
 
 模型1.第一次训练40个epoch的模型。  
-开始预测
+开始预测  
 python test.py --config_file configs/a.yml  
   
 模型2.第一次训练50个epoch的模型。  
-开始预测
+开始预测  
 python test.py --config_file configs/b.yml  
   
-模型3.第二次加入无监督数据训练50个epoch的模型。  
+模型3.第二次加入无监督数据训练50个epoch的模型。 
+开始预测  
 python test.py --config_file configs/c.yml  
 
 最终将3个模型对测试集的预测结果进行加权融合。  
