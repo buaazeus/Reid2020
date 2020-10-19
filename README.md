@@ -8,7 +8,7 @@ pip install opencv-python
 pip install yacs  
 以下所有代码均在NAIC路径下运行  
 
-训练阶段进行了2次训练，全部是在在imagenet预训练模型基础上进行的。  
+训练阶段进行了2次训练，全部是在在imagenet预训练模型基础上进行的，如果仅需要检查模型预测结果，可略过训练阶段，直接进行运行预测阶段代码。  
 第一次训练  
 data/test下存放2020测试集数据  
 运行以下代码，将图片分为normal和green两类。  
