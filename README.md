@@ -51,16 +51,16 @@ python ensemble_dist.py
 文件路径如下  
 
 |-- data  
-	|--train  
-		...  
-	|--test
-		|--query  
-		|--gallery  
+  |--train  
+    ...  
+  |--test
+    |--query  
+    |--gallery  
 |-- model  
-	|--a  
-	|--b  
+  |--a  
+  |--b  
 |-- NAIC  
-	...  
+  ...  
 |-- unlabel  
 
 
