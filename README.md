@@ -47,6 +47,17 @@ python test.py --config_file configs/c.yml
 最终将3个模型对测试集的预测结果进行加权融合。  
 python ensemble_dist.py  
 会在NAIC路径下生成submit_final.json结果文件。
+B榜测试数据集以只读方式挂载在容器内/tcdata目录下。具体路径如下：
+
+|--tcdata
+​	|--amap_traffic_final_b_test_1009.json
+​	|--amap_traffic_final_b_test_data
+​		|--000001
+​			|--1.jpg
+​			|--2.jpg
+​			...
+​	|--amap_traffic_final_b_test_data_1009.zip
+*amap_traffic_final_b_test_data_1009.zip是以上所有内容的压缩
 文件路径如下  
 
 |--tcdata
