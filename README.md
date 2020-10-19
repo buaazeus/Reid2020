@@ -48,19 +48,5 @@ python test.py --config_file configs/c.yml
 python ensemble_dist.py  
 会在NAIC路径下生成submit_final.json结果文件。
 
-文件路径如下  
-
-|-- data  
-  |--train  
-    ...  
-  |--test
-    |--query  
-    |--gallery  
-|-- model  
-  |--a  
-  |--b  
-|-- NAIC  
-  ...  
-|-- unlabel  
 
 
