@@ -6,6 +6,10 @@ https://github.com/heshuting555/NAIC_Person_ReID_DMT
 安装环境需求  
 pip install opencv-python  
 pip install yacs  
+模型文件  
+链接：https://pan.baidu.com/s/1IidhaBKVpic8n5-iqCi4rA  
+提取码：rlm5  
+
 以下所有代码均在NAIC路径下运行  
 
 训练阶段进行了2次训练，全部是在在imagenet预训练模型基础上进行的，如果仅需要检查模型预测结果，可略过训练阶段，直接进行运行预测阶段代码。  
