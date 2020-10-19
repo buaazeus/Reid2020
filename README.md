@@ -28,7 +28,7 @@ python divided_dataset.py --data_dir_query ../data/test/query --data_dir_gallery
 开始训练
 python train_UDA.py --config_file configs/c.yml --config_file_test configs/a.yml --data_dir_query ../data/test/query --data_dir_gallery ../data/test/gallery
   
-预测阶段进行了3次预测，最后加权融合，预测时使用了Rerank。  
+预测阶段进行了3次预测，最后加权融合，预测时使用了Rerank，需48G显存显卡计算。  
 data/test下存放2020测试集数据  
 运行以下代码，将图片分为normal和green两类。  
 python divided_dataset.py --data_dir_query ../data/test/query --data_dir_gallery ../data/test/gallery --save_dir ../data/test/  
