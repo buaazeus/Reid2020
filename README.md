@@ -44,8 +44,9 @@ python test.py --config_file configs/b.yml
 模型3.第二次加入无监督数据训练50个epoch的模型。  
 python test.py --config_file configs/c.yml  
 
-
 最终将3个模型对测试集的预测结果进行加权融合。  
+python ensemble_dist.py  
+会在NAIC路径下生成submit_final.json结果文件。
 文件路径如下    
 |-- data
 	|--train
@@ -56,5 +57,16 @@ python test.py --config_file configs/c.yml
 |-- model
 	|--a
 	|--b
-|-- NAIC_Person_ReID_DMT
+|-- NAIC
 	...
+|-- unlabel
+
+|--tcdata
+​	|--amap_traffic_final_test_data.zip
+​	|--amap_traffic_final_test_data
+​		|--000001
+​			|--1.jpg
+​			|--2.jpg
+​			...
+​	|--amap_traffic_final_test_0906.json
+
