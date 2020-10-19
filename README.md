@@ -6,7 +6,7 @@ https://github.com/heshuting555/NAIC_Person_ReID_DMT
 安装环境需求  
 pip install opencv-python  
 pip install yacs  
-以下所有代码均在NAIC_Person_ReID_DMT路径下运行  
+以下所有代码均在NAIC路径下运行  
 
 训练阶段进行了2次训练，全部是在在imagenet预训练模型基础上进行的。  
 第一次训练  
